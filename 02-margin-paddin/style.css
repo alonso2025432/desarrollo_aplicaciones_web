@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    outline: solid 1px black;
+    outline: solid 0px ;
 }
 
 .container{
@@ -13,14 +13,14 @@
 .top-nav{
     width: 100%; /*ancho total de la pantalla*/
     height: 150px;
-    background-color: blue;
+    background-color: green;
 }
 .main{
     display: flex;
     margin-top: 20px;
 }
 .left{
-    background-color: darkolivegreen;
+    background-color: blue;
     height: 300px;
     flex:1; /*va a usar 1/4 parte*/
     margin-right:10px;
@@ -31,11 +31,18 @@
     flex:3; /*va a usar 3/4 partes*/
     margin-left: 10px;
 }
-.main1{
-    display:flex;
+.row{
+    height: 200px;
+    width: 100%;
+    display: flex;
 }
-.cuadrado1{
+.yellow{
+    margin:10px;
+    flex: 1;
     background-color: yellow;
-    height: 150px;
-    flex:1;
+}
+.row2{
+    margin: 20px 30px 0px 20px;
+    height: 125px;
+    background-color: purple;
 }
