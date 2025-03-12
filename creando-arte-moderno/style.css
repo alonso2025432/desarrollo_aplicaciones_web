@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: solid 1px ;
+}
+.container{
+    width: 950px;
+    background-color: rgba(158, 150, 150, 0.26);
+    margin: 0 auto;
+    padding:20px;
+}
+.top-nav{
+    padding:20px;
+    height: 900px;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+}
+
+.crojo{
+    height: 600px;
+    width:600px;
+    background-color: red;
+
+}
+.cblanco{
+    height: 300px;
+    width:300px;
+    background-color: white;
+}
+.cblanco1{
+    height: 300px;
+    width:  300px;
+    background-color: white;
+}
