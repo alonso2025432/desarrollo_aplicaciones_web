@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    padding-bottom: 40px;
+    width: 100%;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.container2{
+    margin: 0 auto;
+    height: 300px;
+    width: 75%;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: -80px;
+    padding-top: 80px;
+    box-shadow: 3px 3px 5px black;
+}
+.top-nav{
+    height: 165px;
+    width: 100%;
+    margin-bottom: 80px;
+    
+    img{
+        margin-top: 80px;
+        
+    }
+}
+li{
+    list-style-type: none;
+}
+button{
+    background-color: #3798dc;
+    color: white;
+    height: 60px;
+    width: 120px;
+    border-radius: 10px;
+}
