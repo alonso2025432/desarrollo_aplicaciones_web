@@ -28,9 +28,11 @@
 .row{
     display:flex;
     justify-content:space-between;
+    padding: 30px;
 }
 img{
     height: 50px;
+    margin-bottom: -15px;
 }
 .container1{
     background-color: white;
