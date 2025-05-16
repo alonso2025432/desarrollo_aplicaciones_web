@@ -10,8 +10,8 @@ usando su posición en el arreglo.
 */
 
 function sumadenumeros(){
-    let arreglo = [2,5,7,8,10," nose que poner"];
+    let arreglo = [2,5,7,8,10];
     let resultado = (arreglo[1]+arreglo[3]);
-    alert("el resultado de la suma de el segundo y el cuarto numero es: \n" 
-        +resultado+arreglo[arreglo.length-1]);
+    let mesaje = "el resultado de la suma es: "
+    alert(mesaje+resultado);
 }
