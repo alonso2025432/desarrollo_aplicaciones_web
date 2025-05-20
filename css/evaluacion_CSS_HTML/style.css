@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.container{
+    display: flex;
+}
+.izquierda{
+    
+    width: 30%;
+    padding-left: 30px;
+}
+.derecha{
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+}
+img{
+    margin-top: 30px;
+    width: 150px;
+}
+.pibe{
+    width: 160px;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.text{
+    text-decoration: none;
+    color: #8d89a0;
+}
+.texto{
+    
+    color:#706c87; 
+    text-decoration: none;
+}
+.erre{
+    
+    text-decoration: none;
+    color: #8d89a0;
+}
+.container2{
+    display: flex;
+}
+.num{
+    flex: 1;
+}
+.container3{
+    display: flex;
+}
+.tex{
+    flex: 1;
+}
