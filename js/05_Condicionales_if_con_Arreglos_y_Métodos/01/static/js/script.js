@@ -68,3 +68,82 @@ function saludocondicional(){
         `<p>${saludos}</p>`
     }
 }
+function calificarnota(){
+    let nota = 5;
+    if (nota >= 6) {
+        document.getElementById("resultado").innerHTML =
+        `<p>Excelente</p>`;
+    } else if (nota >= 4) {
+        document.getElementById("resultado").innerHTML =
+        `<p>Aprobado</p>`;
+    } else {
+        document.getElementById("resultado").innerHTML =
+        `<p>Reprobado</p>`;
+}
+
+}
+
+function registrodevisitas(){
+    let visitas = []
+    let persona = prompt("ingrese su nombre")
+    if (persona==""){
+        document.getElementById("resultado").innerHTML =
+        `<p>Error: nombre vacio</p>`
+    }else{
+        visitas.unshift(persona)
+        document.getElementById("resultado").innerHTML =
+        `<p>nombre agregado correctamente</p>`
+    }
+}
+
+function controldestock(){
+    let stock = ["arroz", "fideos"];
+    let productoSolicitado = prompt("ingrese un nuevo producto");
+    if (stock[0] == productoSolicitado){
+        document.getElementById("resultado").innerHTML =
+        `<p>el producto: <strong>${productoSolicitado}</strong> ya esta ingresado</p>`;
+    }
+    else if (stock[1] == productoSolicitado){
+        document.getElementById("resultado").innerHTML =
+        `<p>el producto: <strong>${productoSolicitado}</strong> ya esta ingresado</p>`;
+    }else{
+        stock.push(productoSolicitado);
+        document.getElementById("resultado").innerHTML =
+        `<p>producto ingresado correctamente, stock: <strong>${stock.join(" ~ ")}</strong></p>`
+    }
+}
+
+function listadeinvitados(){
+    let invitados = ["Ana", "Luis", "Camila"];
+    let persona = prompt("porfavor, ingrese su nombre")
+    if (invitados[0]==persona){
+        document.getElementById("resultado").innerHTML =
+        `<p>bienvenido ${persona}</p>`
+    } else if (invitados[1]==persona){
+        document.getElementById("resultado").innerHTML =
+        `<p>bienvenido ${persona}</p>`
+    } else if (invitados[2]==persona){
+        document.getElementById("resultado").innerHTML =
+        `<p>bienvenido ${persona}</p>`
+    } else{
+        document.getElementById("resultado").innerHTML =
+        `<p>No estas en la lista</p>`
+    }
+}
+
+function evaluarrol(){
+    let usuarios = ["Admin", "Editor", "Invitado"];
+    let rol = prompt("ingrese su rol (Admin, Editor, Invitado)")
+    if (usuarios[0]===rol){
+        usuarios.unshift(rol)
+        alert("Rol prioritario agregado")
+    }else if (usuarios[1]==rol){
+        usuarios.push(rol)
+        alert("Rol agregado")
+    }else if (usuarios[2]==rol){
+        usuarios.push(rol)
+        alert("Rol agregado")
+    }else{
+        alert("rol no identificado")
+    }
+}
