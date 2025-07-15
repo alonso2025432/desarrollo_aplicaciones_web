@@ -84,3 +84,24 @@ function sumarHastaCero(){
     `<p>Números sumados: <strong>${sumaAcumulada.join(", ")}
     </strong><br>Total acumulado: <strong>${suma}</strong></p>`
 }
+function mostrarletras(){
+    let cadaletra = []
+    let palabra = prompt("introduce una palabra: ")
+    for(let i = 0; i<=palabra.length;i++){
+        cadaletra.push(palabra[i])
+    }
+    document.getElementById("resultado7").innerHTML =
+    `<p>letras dentro de tu palabra: ${cadaletra}</p>`
+}
+
+function validarcontraseña(){
+    while (true){
+        contra = prompt("ingrese su contraseña: ")
+        if (contra==="admin123"){
+            alert("Acceso concedido")
+            break
+        }else{
+            alert("Acceso denegado")
+        }
+    }
+}
