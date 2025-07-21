@@ -105,3 +105,31 @@ function validarcontraseña(){
         }
     }
 }
+function promedionotas(){
+    let cantidad = parseInt(prompt("¿cuantas notas va a ingresar?"))
+    let suma = parseInt(0)
+    let total = parseInt(0)
+    for (let i = 1; i<= cantidad;i++){
+        let nota = parseInt(prompt("ingrese su nota"))
+        suma += nota
+        total = suma / cantidad
+    }
+    document.getElementById("resultado9").innerHTML =
+    `<p>el promedio final es ${total}</p>`
+}
+
+function contarmayoriaedad(){
+    let menor = parseInt(0)
+    let mayor = parseInt(0)
+    let cantidad = parseInt(prompt("¿cuantas personas van a ingresar?"))
+    for (let i = 1; i <= cantidad; i++){
+        let edad = parseInt(prompt("¿cual es la edad de la persona "+i+"?"))
+        if(edad>=18){
+            mayor+=1
+        }else if(edad<<18){
+            menor+=1
+        }
+    }
+    document.getElementById("resultado10").innerHTML =
+    `<p>tan solo <strong>${mayor}</strong> son mayores de edad y <strong>${menor}</strong> son menores de adad</p>`
+}
