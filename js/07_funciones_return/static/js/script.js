@@ -81,6 +81,7 @@ function Pares() {
             "Valor invalido, Por favor ingrese un número válidos.";
             return;
         }
+        
 }
 
 /*
