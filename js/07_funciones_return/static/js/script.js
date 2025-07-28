@@ -63,22 +63,20 @@ function mostrarComparacion() {
 📌 Solicita un número usando input. Diseña una función que reciba ese número como parámetro, determine si es par o impar, 
 y retorne un mensaje con el resultado. Muestra ese mensaje al usuario  en html */
 
-
-
-function vereficarParImpar(numero) {
-    if (numero % 2 === 0) {
-        return `${numero} es un número par`;
-    } else {
-        return `${numero} es un número impar`;
-    }
-}
-
 function Pares() {
     const inputNum = document.getElementById("input3");
     let num = parseInt(inputNum.value);
-        if (isNaN(num) || num === 0); {
+        if (isNaN(num) || num === 0) {
             document.getElementById("resultado3").textContent =
             "Valor invalido, Por favor ingrese un número válidos.";
+            return;
+        } else if (num% 2 >=1 || num% 2 <=-1){
+            document.getElementById("resultado3").textContent =
+            "el valor ingresado es impar";
+            return;
+        }else{
+            document.getElementById("resultado3").textContent =
+            "el valor ingresado es par";
             return;
         }
         
@@ -90,3 +88,21 @@ function Pares() {
 ese número como parámetro y retorne un mensaje indicando si el número es primo o no. 
 Muestra el resultado con 
 html*/
+function validarprimo(){
+    let nump = document.getElementById("input4");
+    if (nump <= 0){
+        document.getElementById("resultado4").textContent =
+        "el valor ingresado no es primo";
+        return
+    }
+    for (let i = 2; i<nump; i++){
+        if (nump % i === 0){
+            document.getElementById("resultado4").textContent =
+            "el valor ingresado no es primo";
+            return;
+        }
+    }
+    document.getElementById("resultado4").textContent =
+    "el valor ingresado es un numero primo";
+    return;
+}
