@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulmoVida - Cuidados</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Columna izquierda -->
+    <section class="left-panel">
+      <h2>Cuidados generales y recomendaciones</h2>
+      <div class="cards">
+        <div class="card blue">
+          <h3>Completa el Tratamiento</h3>
+          <p>Es crucial tomar todos los medicamentos según las indicaciones médicas.</p>
+        </div>
+        <div class="card green">
+          <h3>Tratamiento</h3>
+          <p>La interrupción del tratamiento puede provocar tuberculosis farmacorresistente.</p>
+        </div>
+        <div class="card yellow">
+          <h3>Prevención de Contagio</h3>
+          <p>Usa mascarilla y mantén ventilación adecuada durante las primeras semanas.</p>
+        </div>
+        <div class="card red">
+          <h3>Evita fumar y beber alcohol</h3>
+          <p>El tabaco y alcohol pueden interferir con el tratamiento y la recuperación.</p>
+        </div>
+        <div class="card gray">
+          <h3>Efectos secundarios</h3>
+          <p>Informa a tu médico sobre cualquier efecto secundario. No suspendas el tratamiento por tu cuenta.</p>
+        </div>
+        <div class="card orange">
+          <h3>Higiene</h3>
+          <p>Realiza higiene de manos con frecuencia. Evita compartir elementos de uso personal como toallas y cubiertos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Columna derecha -->
+    <section class="right-panel">
+      <h2>Mis cuidados</h2>
+      <div class="cards">
+        <!-- Registro medicamentos -->
+        <div class="card white">
+          <h3>Registro de medicamentos</h3>
+          <input type="text" id="medicamento" placeholder="Ingrese el nombre del medicamento">
+          <button onclick="agregarRecordatorio()">Agregar recordatorio</button>
+          <ul id="listaMedicamentos"></ul>
+        </div>
+
+        <!-- Citas médicas -->
+        <div class="card white">
+          <h3>Citas Médicas</h3>
+          <input type="text" id="doctor" placeholder="Nombre del Doctor">
+          <input type="date" id="fechaCita">
+          <button onclick="agendarCita()">Agendar cita</button>
+          <ul id="listaCitas"></ul>
+        </div>
+
+        <!-- Progreso del tratamiento -->
+        <div class="card white">
+          <h3>Progreso del tratamiento</h3>
+          <p id="progreso">Medicamentos tomados hoy: 0/3</p>
+          <button onclick="nuevoDia()">Nuevo día</button>
+          <button onclick="tomarMedicamento()">Medicamento tomado</button>
+        </div>
+
+        <!-- Estado de ánimo -->
+        <div class="card white">
+          <h3>¿Cómo te sientes hoy?</h3>
+          <div class="rating">
+            <span onclick="calificar(1)">⭐</span>
+            <span onclick="calificar(2)">⭐</span>
+            <span onclick="calificar(3)">⭐</span>
+            <span onclick="calificar(4)">⭐</span>
+            <span onclick="calificar(5)">⭐</span>
+            <span onclick="calificar(6)">⭐</span>
+            <span onclick="calificar(7)">⭐</span>
+            <span onclick="calificar(8)">⭐</span>
+            <span onclick="calificar(9)">⭐</span>
+            <span onclick="calificar(10)">⭐</span>
+          </div>
+          <textarea id="notas" placeholder="Escribe cómo te sientes..."></textarea>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
