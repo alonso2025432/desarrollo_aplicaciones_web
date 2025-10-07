@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    outline: ;
+    outline: solid 0.5px;
 }
 .top{
     margin: 0 auto;
@@ -37,10 +37,27 @@
     width: 80%;
 }
 .col-l{
-    flex: 2.5;
+    flex: 1;
 }
 .col-r{
+    display: flex;
+    flex-direction: column;
+    
     flex:1;
+    width: 0px;
+    .vid{
+        height: 70%;
+    }
+    .video-title{
+        margin-left: 10px;
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+    .vid-cangre{
+        height: 70%;
+        width: 62.5%;
+    }
 }
 .row{
     display: flex;
@@ -54,6 +71,7 @@
         border: none;
         color: white;
         background-color: #9900ff;
+        
     }
 }
 .user{
@@ -68,6 +86,6 @@
 }
 .video-small{
     display: flex;
-    height: 20%;
+    height: 12%;
     margin-top: 10px;
 }
