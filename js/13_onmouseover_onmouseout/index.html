@@ -27,18 +27,12 @@
         <div class="col-l">
 
             <!-- this is a placeholder replace it with a real video -->
-            <figure class="placeholder">
-                <svg style="text-anchor:middle;" width="100%" height="350" xmlns="http://www.w3.org/2000/svg" role="video" aria-label="Placeholder: 720x400" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#868e96"></rect>
-                    <text x="50%" y="50%" dy=".3em" fill="#dee2e6" >Replace Me!</text>
-                </svg>
-            </figure>
-
+            
+            <video id="mainVideo" src="pages/LETRA.mp4" height="400" width="100%" loop style="display: block" controls></video>
             <!-- video info -->
             <div class="row">
                 <div class="start">
-                    <h1>Example Video Title</h1>
+                    <h1 id="texto">EL RAP DE BIGUI BUGUI | ALEXANDER</h1>
                     <h3>1.3K Views | June, 18, 2021</h3>
                     <div class="user">
                         <img src="pages/descarga.png" alt="" class="avatar-s">
@@ -56,23 +50,23 @@
             <h3 class="sub-header">Up Next</h3>
 
             <div class="video-small">
-                <video class="vid" src="pages/Don Cheto - El Tatuado (Video Letra Oficial).mp4" controls onmouseover="this.play()" onmouseout="this.pause()" ></video>
-                <span class="video-title">Not a Rick Roll</span>
+                <video class="vid" src="pages/Don Cheto - El Tatuado (Video Letra Oficial).mp4" muted onmouseover="playvideo(this)" onmouseout="pausevideo(this)" onclick="cambioVideo(this)"></video>
+                <span id="texto2" class="video-title">Don Cheto - El Tatuado</span>
             </div>
 
             <div class="video-small">
-                <video src="pages/Los Buitres De Culiacan Sinaloa - El Cocaino (Video oficial).mp4" class="vid"></video>
-                <span class="video-title">10 Facts About ET's Cat!</span>
+                <video src="pages/Los Buitres De Culiacan Sinaloa - El Cocaino (Video oficial).mp4" class="vid" muted onmouseover="playvideo(this)" onmouseout="pausevideo(this)" onclick="cambioVideo(this)"></video>
+                <span id="texto2" class="video-title">Los Buitres De Culiacan Sinaloa - El Cocaino</span>
             </div>
 
             <div class="video-small">
-                <video src="pages/Los Tigres Del Norte - La Granja.mp4" class="vid"></video>
-                <span class="video-title">5 Cosplay Tips</span>
+                <video src="pages/Los Tigres Del Norte - La Granja.mp4" class="vid"  muted onmouseover="playvideo(this)" onmouseout="pausevideo(this)" onclick="cambioVideo(this)"></video>
+                <span id="texto2" class="video-title">Los Tigres Del Norte - La Granja</span>
             </div>
 
             <div class="video-small">
-                <video src="pages/videoplayback.mp4" class="vid-cangre"></video>
-                <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
+                <video src="pages/videoplayback.mp4" class="vid-cangre"  muted onmouseover="playvideo(this)" onmouseout="pausevideo(this)" onclick="cambioVideo(this)"></video>
+                <span id="texto2" class="video-title">GRABANDO UN VIDIO MAS INCREIBLE DO MUNDO UN SIRI FAZENDO BARA</span>
             </div>
 
         </div>
