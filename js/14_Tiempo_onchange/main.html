@@ -22,60 +22,61 @@
 
         <div class="top_container">
             <h1>San Jose</h1>
-            <p>Show temperature in </p>
-            <select name="" id="select">
-                <option value="°C">°C</option>
-                <option value="°F">°F</option>
-            </select>
+            <div class="select_container">
+                <p>Show temperature in </p>
+                <select name="" id="select" onchange="cambiar(this.value)">
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
+                </select>
+            </div>
         </div>
         
         <div class="container">
-            <div class="col_1">
-                <h1></h1>
-                <img src="" alt="">
-                <p></p>
+            <div class="col">
+                <h1>Today</h1>
+                <img src="static/pages/some_rain.png" alt="">
+                <p>some rain</p>
                 <div class="row_container">
                     <span id="grados" class="grados_img">24°</span>
                     <span id="grados" class="grados_img2">18°</span>
                 </div>
             </div>
-            <div class="col_2">
-                <h1></h1>
-                <img src="" alt="">
-                <p></p>
+            <div class="col">
+                <h1>Tomorrow</h1>
+                <img src="static/pages/some_sun.png" alt="">
+                <p>some sun</p>
                 <div class="row_container">
                     <span id="grados" class="grados_img">27°</span>
                     <span id="grados" class="grados_img2">19°</span>
                 </div>
             </div>
-            <div class="col_3">
-                <h1></h1>
-                <img src="" alt="">
-                <p></p>
+            <div class="col">
+                <h1>Friday</h1>
+                <img src="static/pages/some_clouds.png" alt="">
+                <p>some clouds</p>
                 <div class="row_container">
                     <span id="grados" class="grados_img">21°</span>
                     <span id="grados" class="grados_img2">16°</span>
                 </div>
             </div>
-            <div class="col_4">
-                <h1></h1>
-                <img src="" alt="">
-                <p></p>
+            <div class="col">
+                <h1>Saturday</h1>
+                <img src="static/pages/some_sun.png" alt="">
+                <p>some sun</p>
                 <div class="row_container">
                     <span id="grados" class="grados_img">26°</span>
                     <span id="grados" class="grados_img2">21°</span>
                 </div>
             </div>
         </div>
-        <div class="cookie_container">
+        <div id="cookie_container" class="cookie_container">
+            <img src="static/pages/cookie-removebg-preview.png" alt="">
             <div class="container_text">
-                <span id="coockie_title" class="coockie_title">Stop! Cookie time</span>
-                <span id="coockie_text" class="coockie_text">We use cookies (sadly not the edible ones) to personalize content and ads, to aprove solcial media features and to analyse aour traffic.</span>
-                <ul>
-                    <li><a href="#">Read more...</a></li>
-                </ul>
+                <span id="cookie_title" class="cookie_title">Stop! Cookie time</span>
+                <span id="cookie_text" class="cookie_text">We use cookies (sadly not the edible ones) to personalize content and ads, to aprove solcial media features and to analyse aour traffic.<li><a href="#">Read more...</a></li></span>
+                
             </div>
-            <button class="btn">I accept</button>
+            <button class="btn" onclick="hide(cookie_container)">I accept</button>
             
         </div>
     </div>
