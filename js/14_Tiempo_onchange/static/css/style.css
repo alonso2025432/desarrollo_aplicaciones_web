@@ -68,11 +68,14 @@ a{
     justify-content: space-around;
     margin-top: 20px;
 }
-.grados_img{
+.micro_cont{
     color: #ce0e0b;
+    display: flex;
 }
-.grados_img2{
+
+.micro_cont2{
     color: #277ae4;
+    display: flex;
 }
 .cookie_container{
     outline: solid 2px;
