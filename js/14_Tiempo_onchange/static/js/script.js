@@ -42,3 +42,7 @@ function cambiar(medida){
         document.getElementById("grados7").textContent = gradosf7
     }
 }
+
+function alerta(){
+    alert("This page says \n loading weather report...")
+}
