@@ -10,7 +10,7 @@
     <nav>
         <h1>Dojonary</h1>
         <input type="text" placeholder="Search">
-        <button onclick="">Login</button>
+        <button onclick="cambio(this)" id="login">Login</button>
     </nav>
     <div class="container">
         <div class="container6">
@@ -33,12 +33,12 @@
                     </div>
                     
                 </div>
-                <button class="btny" onclick="">0 likes</button>
+                <button class="btny" onclick="like(this)"><span id="likes">0</span> likes</button>
             </div>
         
             <div class="container5">
                 <h3>Dojonary is defined by <h2>YOU</h2></h3>
-                <button class="btn" onclick="">Add definition</button>
+                <button class="btn" onclick="remover(this)">Add definition</button>
             </div>
         </div>
 
@@ -58,7 +58,7 @@
                 <h5>-like focus</h5>
             </div>
 
-            <button class="btny" onclick="">0 likes</button>
+            <button class="btny" onclick="liked(this)"><span id="liked">0</span> likes</button>
         </div>
     </div>
     <script src="static/js/script.js"></script>
